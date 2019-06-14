@@ -1,0 +1,2 @@
+# recipeIonicVersion
+ionic, angular
