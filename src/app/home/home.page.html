@@ -1,11 +1,91 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
-  user name: <input type="text" [(ngModel)]='query'>
-  <button (click)='sendSearchQuery()'>search</button>
-</ion-content>
+<div class="main">
+	<header>
+		<div class="search">
+			<input type="" name="" placeholder="search" [(ngModel)]='query'>
+			<button (click)='sendSearchQuery()'>
+				
+			</button>
+		</div>
+	</header>
+	<div class="mainPageContent">
+		<content>
+			<div class="heading">
+				<h1>Your Recipe</h1>
+				<h4>Today</h4>
+				<!-- <hr class="firstHr" ng-align="right">
+				<hr class="secHr" ng-align="right"> -->
+			</div>
+			<div class="text">
+				<h5>Thirty percent of the world's food wasted</h5>
+				<h6>An estimated 1.3 billion tonnes of food is lost or wasted annually as 800 million people go hungry
+				</h6>
+				<hr ng-align="left">
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				</p>
+			</div>
+		</content>
+		<div class="category">
+			<div class="catItem">
+				<h3>Japanese</h3>
+			</div>
+			<div class="catItem">
+				<h3>Italian</h3>
+			</div>
+			<div class="catItem">
+				<h3>Armenian</h3>
+			</div>
+			<div class="catItem">
+				<h3>Japanese</h3>
+			</div>
+			<div class="catItem">
+				<h3>Armenian</h3>
+			</div>
+		</div>
+		<div class="demoRecipes">
+
+			<div class="catItem">
+				<div class="recipeImg"><img src="../../assets/carrots.jpg"></div>
+				<div class="desc">
+					<div>
+						<h6>Backed carrots</h6>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="catItem">
+				<div class="recipeImg"><img src="../../assets/carrots.jpg"></div>
+				<div class="desc">
+					<div>
+						<h6>Backed carrots</h6>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="catItem">
+				<div class="recipeImg"><img src="../../assets/carrots.jpg"></div>
+				<div class="desc">
+					<div>
+						<h6>Backed carrots</h6>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="catItem">
+				<div class="recipeImg"><img src="../../assets/carrots.jpg"></div>
+				<div class="desc">
+					<div>
+						<h6>Backed carrots</h6>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>

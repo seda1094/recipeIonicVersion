@@ -1,0 +1,192 @@
+
+.mainList{
+	width: 100%;
+}
+
+.searchBar{
+	height: 50px;
+	background-color: black;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.buttonBack{
+	background: black !important;
+	width: 50px;
+	height: 50px;
+	// background-image: url(../../assets/back.png);
+	// background-repeat: no-repeat;
+	// background-position: center;
+}
+.mainList .content{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../../assets/back-car-blur.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-y: scroll;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+.mainList .content .listItem{
+
+	width: 90%;
+	height: 70px;
+	background: rgba(50,50,50,0.6);
+	border-radius: 15px;
+	margin: 10px auto;
+	padding: 5px;
+}
+
+.mainList .content .listItem .listImg{
+	float: left;
+	margin: 3px;
+}
+
+.mainList .content .listItem .listImg img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.mainList .content .listItem .listDesc h1{
+	font-size: 12px;
+	margin: 2px !important;
+
+
+
+}
+
+.mainList .content .listItem .listDesc p{
+	font-size: 10px;
+	margin: 2px;
+}
+.mainList .searchBar {
+	display: flex;
+	/*justify-content: space-around;*/
+	align-items: center;
+	width: 100%;
+
+}
+.mainList .searchBar .searchDivList input{
+
+	box-sizing: border-box;
+	height: 90px;
+	width: 80%;
+	font-size: 50px;
+	background: rgb(0,0,0);
+	/*margin: 10px 10px 25px 40px;*/
+		padding: 10px 10px 10px 40px;
+		/*margin-bottom: 25px;*/
+		margin-left: 20px;
+	border-radius: 90px;
+	color: white;
+	overflow:hidden; 
+	border:2px solid white;
+
+}
+input:focus{
+    outline: none;
+}
+// .mainList .searchBar .buttonSearch{
+// 	box-sizing: border-box;
+// 	position: relative;
+// 	left: 7%;
+// 	top: 11%;
+// 	height: 110px;
+// 	width: 130px;
+// 	background: rgba(0,0,0,1);
+// 	padding: 10px 10px 10px 40px;
+// 	border-radius: 90px;
+// 	border: 0px;
+// 	margin-bottom: -20px;
+
+// }
+// .mainList .searchBar button{
+// 	box-sizing: border-box;
+// 	height: 110px;
+// 	width: 110px;
+// 	background: rgba(0,0,0,1);
+// 	/*padding: 10px 10px 10px 40px;*/
+// 	border-radius: 90px;
+// 	border: 0px;
+// 	margin-left: 30px;
+// 	margin-right: 40px;
+
+
+// }
+// .mainList .searchBar button img{
+// 	height: 90px;
+// 	width: 90px;
+// }
+// .mainList .searchBar .buttonSearch img{
+// 	margin-right: 15px;
+// }
+// .mainList .cover{
+// 	width: 100%;
+// 	height: 300px;
+// 	overflow: hidden;
+// }
+// .mainList .contDet{
+// 	position: absolute;
+// 	top: 150px;
+// 	left: 0;
+// 		background-image: url(../../assets/backDetBlur.jpg);
+// 	background-attachment: fixed;
+// 	background-size: cover;
+// }
+// .contDet .textContent{
+
+// }
+// .contDet .textContent h1{
+// 	font-size: 80px;
+// 	 margin: 40px;
+// }
+// .contDet .textContent .firstHr{
+// 	width: 80%;
+// }
+// .contDet .textContent .secHr{
+// 	width: 60%;
+// }
+// .contDet .textContent .desc{
+
+// }
+// .contDet .textContent .desc{
+// 	background-color: rgba(150,150,150,.6);
+// 	width: 70%;
+// 	font-size: 30px;
+// 	margin-top: 40px;
+// 	padding: 20px;
+// 	font-style: italic;
+
+// }
+
+// .contDet .textContent .text{
+// 	background-color: rgba(0,0,0,.6);
+// 	width: 90%;
+// 	margin: 40px auto;
+// 	font-size: 30px;
+// 	padding: 20px;
+
+// }
+// hr{
+// 	height: 3px;
+// 	background-color: white;
+// }
+
+// // @font-face{
+// // 	src:url(fonts/JournalCTTRegular.ttf);
+// // 	font-family: JournalCTTRegular;
+// // }
+
+// // @font-face{
+// // 	src:url(fonts/JournalCTTItalic.ttf);
+// // 	font-family: JournalCTTItalic;
+// // }

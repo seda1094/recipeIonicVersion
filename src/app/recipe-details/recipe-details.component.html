@@ -1,11 +1,11 @@
-<h1>{{ recipeId }}</h1>
+<!-- <h1>{{ recipeId }}</h1>
 <h1>{{ query }}</h1>
-    <!-- recipe -->
+
 <div *ngIf="response">
 
     <div *ngFor='let r of response.hits; let t = index' >
        <div *ngIf="t==recipeId">
-           <!-- <a routerLink=""></a> -->
+  
         <ion-button href='/list/{{query}}'>back</ion-button>
         <h1>{{ response.hits[0].recipe.label }}</h1>
         <ul *ngFor='let i of r.recipe.ingredientLines'>
@@ -17,4 +17,48 @@
         </ul>
         <img style="border-radius: 50%" src="{{r.recipe.image}}" alt="">
        </div>
+    </div>
+ -->
+
+
+
+
+
+    <div class="mainList">
+        <div class="searchBar">
+            <ion-button href='/list/{{query}}'><img src="../../assets/back.png"></ion-button>
+            <div class="searchDivList">
+                <!-- <input type="" name="" placeholder="search"> -->
+                <!-- <button class="buttonSearch">
+                    <img src="Images/search.png" width="60" height="60">
+            </button> -->
+            </div>
+        </div>
+    
+        <div class="contDet" *ngIf="response">
+            <div *ngFor='let r of response.hits; let t = index'>
+                <div *ngIf="t==recipeId">
+                    <div class="cover">
+                        <img src="{{r.recipe.image}}">
+                    </div>	
+                    <div class="textContent">
+                        <h1>{{ response.hits[0].recipe.label }}</h1>
+                        <hr class="firstHr" ng-align="right">
+                        <br>
+                        <hr class="secHr" ng-align="right">
+                        <div class="desc">
+                            <div>
+                                <ul *ngFor='let i of r.recipe.ingredientLines'>
+                                    <li>{{i}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text" *ngFor="let i of r.recipe.ingredients">
+                            <p>food:{{i.text}} weight: {{i.weight}}</p>
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    
     </div>
