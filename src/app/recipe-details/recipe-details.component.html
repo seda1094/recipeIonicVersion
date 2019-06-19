@@ -26,7 +26,7 @@
 
     <div class="mainList">
         <div class="searchBar">
-            <ion-button href='/list/{{query}}'><img src="../../assets/back.png"></ion-button>
+            <ion-button class="buttonBack"  size="small" color="dark" href='/list/{{query}}'><img src="../../assets/back.png"></ion-button>
             <div class="searchDivList">
                 <!-- <input type="" name="" placeholder="search"> -->
                 <!-- <button class="buttonSearch">
@@ -34,17 +34,17 @@
             </button> -->
             </div>
         </div>
-    
+     
         <div class="contDet" *ngIf="response">
             <div *ngFor='let r of response.hits; let t = index'>
-                <div *ngIf="t==recipeId">
+                <div class="contDetIf" *ngIf="t==recipeId">
                     <div class="cover">
                         <img src="{{r.recipe.image}}">
                     </div>	
                     <div class="textContent">
                         <h1>{{ response.hits[0].recipe.label }}</h1>
                         <hr class="firstHr" ng-align="right">
-                        <br>
+            
                         <hr class="secHr" ng-align="right">
                         <div class="desc">
                             <div>
